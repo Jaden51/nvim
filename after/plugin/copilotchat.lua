@@ -8,4 +8,5 @@ chat.setup({
         width = 0.3,
         border = "single",
     },
+    chat_autocomplete = true
 })
