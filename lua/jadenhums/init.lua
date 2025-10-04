@@ -3,4 +3,4 @@ require("jadenhums.lazy")
 require("jadenhums.kanagawa")
 require("jadenhums.lsp")
 require("jadenhums.set")
-
+require("jadenhums.diagnostics")

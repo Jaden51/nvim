@@ -7,6 +7,5 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 
 vim.lsp.enable({
     "lua_ls",
-    "racket_langserver",
-    "rust_analyzer"
+    "racket_langserver"
 })

@@ -72,7 +72,16 @@ require("lazy").setup({
         },
         {
             "github/copilot.vim"
-        }
+        },
+        {
+            "mason-org/mason-lspconfig.nvim",
+            opts = {},
+            dependencies = {
+                { "mason-org/mason.nvim", opts = {} },
+                "neovim/nvim-lspconfig",
+            },
+        },
+        { import = "jadenhums.plugins" }
     },
     install = { colorscheme = { "habamax" } },
     checker = { enabled = true },
