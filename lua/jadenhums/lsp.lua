@@ -5,9 +5,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     end,
 })
 
-vim.lsp.config.capabilities = vim.lsp.protocol.make_client_capabilities()
-vim.lsp.config.capabilities.offsetEncoding = { "utf-16" }
-
 vim.lsp.enable({
     "lua_ls",
     "racket_langserver",
