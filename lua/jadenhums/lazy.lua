@@ -26,6 +26,9 @@ require("lazy").setup({
             dependencies = { 'nvim-lua/plenary.nvim' }
         },
         {
+            'nvim-telescope/telescope-ui-select.nvim'
+        },
+        {
             'rebelot/kanagawa.nvim'
         },
         {
@@ -62,26 +65,11 @@ require("lazy").setup({
             'hrsh7th/nvim-cmp'
         },
         {
-            "CopilotC-Nvim/CopilotChat.nvim",
-            dependencies = {
-                { "nvim-lua/plenary.nvim", branch = "master" },
-            },
-            build = "make tiktoken",
-            opts = {
-            },
-        },
-        {
             "github/copilot.vim"
         },
         {
-            "mason-org/mason-lspconfig.nvim",
-            opts = {},
-            dependencies = {
-                { "mason-org/mason.nvim", opts = {} },
-                "neovim/nvim-lspconfig",
-            },
-        },
-        { import = "jadenhums.plugins" }
+            import = "jadenhums.plugins"
+        }
     },
     install = { colorscheme = { "habamax" } },
     checker = { enabled = true },
