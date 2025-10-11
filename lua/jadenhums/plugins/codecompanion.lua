@@ -11,7 +11,7 @@ return {
         strategies = {
             chat = {
                 name = "copilot",
-                model = "gpt-4.1",
+                model = "gpt-4.1"
             },
         },
     }

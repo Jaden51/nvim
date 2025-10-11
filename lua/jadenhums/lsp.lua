@@ -7,5 +7,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 
 vim.lsp.enable({
     "lua_ls",
-    "racket_langserver"
+    "racket_langserver",
+    "erlang_ls",
+    "bash-language-server"
 })
