@@ -9,5 +9,6 @@ vim.lsp.enable({
     "lua_ls",
     "racket_langserver",
     "erlang_ls",
-    "bash-language-server"
+    "bash-language-server",
+    "clangd"
 })
