@@ -25,30 +25,39 @@ require("lazy").setup({
             tag = '0.1.8',
             dependencies = { 'nvim-lua/plenary.nvim' }
         },
+        -- searching files
         {
             'nvim-telescope/telescope-ui-select.nvim'
         },
+        -- themes
         {
             'rebelot/kanagawa.nvim'
         },
+        -- parsing syntax trees for colour
         {
             'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ':TSUpdate'
         },
+        -- better lua
         {
             'nvim-lua/plenary.nvim'
         },
+        -- file marking
         {
             'ThePrimeagen/harpoon'
         },
+        -- undo tree
         {
             'mbbill/undotree'
         },
+        -- git wrapper
         {
             'tpope/vim-fugitive'
         },
+        -- lsp
         {
             'neovim/nvim-lspconfig'
         },
+        -- auto complete
         {
             'hrsh7th/cmp-nvim-lsp'
         },
@@ -63,9 +72,6 @@ require("lazy").setup({
         },
         {
             'hrsh7th/nvim-cmp'
-        },
-        {
-            "github/copilot.vim"
         },
         {
             import = "jadenhums.plugins"
