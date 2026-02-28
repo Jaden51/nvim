@@ -4,9 +4,3 @@ vim.api.nvim_create_autocmd("BufWritePre", {
         vim.lsp.buf.format({ bufnr = ev.buf })
     end,
 })
-
-vim.lsp.enable({
-    "lua_ls",
-    "racket_langserver",
-    "clangd"
-})
