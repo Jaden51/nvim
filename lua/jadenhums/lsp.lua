@@ -1,6 +1,3 @@
--- Autoformat before save
-vim.api.nvim_create_autocmd("BufWritePre", {
-    callback = function(ev)
-        vim.lsp.buf.format({ bufnr = ev.buf })
-    end,
-})
+-- Formatting is handled by conform.nvim (see plugins/conform.lua)
+-- conform uses lsp_format = "fallback" so LSP formatting still works
+-- for filetypes without a dedicated formatter configured.
