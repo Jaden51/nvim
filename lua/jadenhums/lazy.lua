@@ -74,6 +74,12 @@ require("lazy").setup({
             'hrsh7th/nvim-cmp'
         },
         {
+            "fei6409/log-highlight.nvim",
+            config = function()
+                require("log-highlight").setup({})
+            end,
+        },
+        {
             import = "jadenhums.plugins"
         }
     },
