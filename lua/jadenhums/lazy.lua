@@ -35,7 +35,7 @@ require("lazy").setup({
         },
         -- parsing syntax trees for colour
         {
-            'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ':TSUpdate'
+            'nvim-treesitter/nvim-treesitter', branch = 'main', lazy = false, build = ':TSUpdate'
         },
         -- better lua
         {
@@ -84,5 +84,5 @@ require("lazy").setup({
         }
     },
     install = { colorscheme = { "habamax" } },
-    checker = { enabled = true },
+    checker = { enabled = true, notify = false },
 })
