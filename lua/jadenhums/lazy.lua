@@ -22,7 +22,7 @@ require("lazy").setup({
     spec = {
         {
             'nvim-telescope/telescope.nvim',
-            tag = '0.1.8',
+            branch = 'master',
             dependencies = { 'nvim-lua/plenary.nvim' }
         },
         -- searching files
@@ -32,6 +32,9 @@ require("lazy").setup({
         -- themes
         {
             'rebelot/kanagawa.nvim'
+        },
+        {
+            'rose-pine/neovim'
         },
         -- parsing syntax trees for colour
         {
@@ -72,6 +75,9 @@ require("lazy").setup({
         },
         {
             'hrsh7th/nvim-cmp'
+        },
+        { 
+            "ChmaraX/herdr-nvim", opts = {} 
         },
         {
             "fei6409/log-highlight.nvim",
